@@ -53,11 +53,10 @@ def _make_required_install_packages():
           default='>=1.13.1,<1.14.0',
           nightly='>=1.14.0.dev',
           git_master='@git+https://github.com/tensorflow/metadata@master'),
-      'tfx-bsl',
-#       'tfx-bsl' + select_constraint(
+      'tfx-bsl' + select_constraint(
 #           default='>=1.13.0,<1.14.0',
 #           nightly='>=1.14.0.dev',
-#           git_master='@git+https://github.com/tensorflow/tfx-bsl@master'),
+          git_master='@git+https://github.com/tensorflow/tfx-bsl@master'),
   ]
 
 
@@ -92,9 +91,6 @@ setup(
     ],
     namespace_packages=[],
     install_requires=_make_required_install_packages(),
-    dependency_links=[
-        'git+https://github.com/tensorflow/tfx-bsl.git#egg=tfx-bsl',
-    ],
     python_requires='>=3.8,<4',
     packages=find_packages(),
     include_package_data=True,
