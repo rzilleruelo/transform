@@ -42,7 +42,7 @@ def _make_required_install_packages():
   # Make sure to sync the versions of common dependencies (absl-py, numpy, and
   # protobuf) with TF and pyarrow version with tfx-bsl.
   return [
-#       'absl-py>=0.9,<2.0.0',
+      'absl-py>=0.9,<2.0.0',
 #       'apache-beam[gcp]>=2.41,<3',
 #       'numpy~=1.22.0',
 #       'protobuf>=3.20.3,<5',
