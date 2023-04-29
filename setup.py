@@ -49,10 +49,10 @@ def _make_required_install_packages():
       'pyarrow>=6,<7',
       'pydot>=1.2,<2',
       'tensorflow>=2.12,<3',
-#       'tensorflow-metadata' + select_constraint(
-#           default='>=1.13.1,<1.14.0',
-#           nightly='>=1.14.0.dev',
-#           git_master='@git+https://github.com/tensorflow/metadata@master'),
+      'tensorflow-metadata' + select_constraint(
+          default='>=1.13.1,<1.14.0',
+          nightly='>=1.14.0.dev',
+          git_master='@git+https://github.com/tensorflow/metadata@master'),
 #       'tfx-bsl' + select_constraint(
 #           default='>=1.13.0,<1.14.0',
 #           nightly='>=1.14.0.dev',
