@@ -43,7 +43,7 @@ def _make_required_install_packages():
   # protobuf) with TF and pyarrow version with tfx-bsl.
   return [
       'absl-py>=0.9,<2.0.0',
-#       'apache-beam[gcp]>=2.41,<3',
+      'apache-beam[gcp]>=2.41,<3',
 #       'numpy~=1.22.0',
 #       'protobuf>=3.20.3,<5',
 #       'pyarrow>=6,<7',
