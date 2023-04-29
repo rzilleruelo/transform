@@ -94,7 +94,7 @@ setup(
     install_requires=_make_required_install_packages(),
     dependency_links=[
         'git+https://github.com/tensorflow/tfx-bsl.git#egg=tfx-bsl',
-    ]
+    ],
     python_requires='>=3.8,<4',
     packages=find_packages(),
     include_package_data=True,
